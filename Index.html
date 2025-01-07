@@ -4,26 +4,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home page</title>
     <link rel="stylesheet" href="style.css">
+    <!-- internal css (css mean: cescading styl sheet) -->
+    <!-- Git version control system -->
+    <style>
+        label {
+            display: block;
+        }
+    </style>
+
+    <link rel="stylesheet" href="new.css">
 </head>
 
 <body>
+
+    <header>
+        <header>
+            <nav>
+                <ul>
+                    <li><a href="form_fields.html">Form</a></li>
+                    <li><a href="nav_head_foot.html">Navber</a></li>
+                    <li>
+                        <a href="index.html">Home</a>
+
+                        <ul class="dropdwon">
+                            <li><a href="form_fields.html">Form</a></li>
+                            <li><a href="nav_head_foot.html">Navber</a></li>
+                            <li>
+                                <a href="index.html">Home</a>
+                                <ul class="dropdwon">
+                                    <li><a href="form_fields.html">Form</a></li>
+                                    <li><a href="nav_head_foot.html">Navber</a></li>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="vedio.html">Vedio</a></li>
+                                </ul>
+
+
+                            </li>
+                            <li><a href="vedio.html">Vedio</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="vedio.html">Vedio</a></li>
+                </ul>
+            </nav>
+        </header>
+    </header>
 
 
     <form action="">
 
         <label for="username">username:</label><br>
         <input type="text" placeholder="Enter Your Username">
-        <br>
 
-        <label for="first_name">First Name:</label><br>
+
+        <label for="first_name">First Name:</label>
         <input type="text" placeholder="Enter Your First Name">
 
+        <fieldset>
+            <legend>Your Department</legend>
+            <label for="cst">
+                <input type="radio" name="dept" id="cst">CST
+            </label>
+            <label for="tct">
+                <input type="radio" name="dept" id="tct">TCT
+            </label>
+            <label for="civil">
+                <input type="radio" name="dept" id="civil">Civil
+            </label>
+            <label for="power">
+                <input type="radio" name="dept" id="power">Power
+            </label>
+
+
+
+        </fieldset>
 
 
 
     </form>
+
+
+    <article>
+        <figure>
+            <img width="300" src="totini.jpeg" alt="">
+            <figcaption>Artist Of Bangladesh</figcaption>
+        </figure>
+    </article>
 
     <label for="audi">Goat Audio</label><br>
     <audio controls src="media/goatmp3-14615.mp3"></audio>
@@ -33,9 +100,12 @@
     </video>
 
     <a href="" download="">Download</a>
-    <video  controls width="300" src="media/vedio_1.mp4"></video>
+    <video controls width="300" src="media/vedio_1.mp4"></video>
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/mmdqPw2Y5as?si=6DII1fxLFhKaFVOv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/mmdqPw2Y5as?si=6DII1fxLFhKaFVOv"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 </body>
 
